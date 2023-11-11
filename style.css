@@ -1,0 +1,231 @@
+body {
+    display: flex;
+    position: relative;
+    animation: backgroundChange3 10s infinite;
+    /* background: linear-gradient(rgb(205, 205, 219), rgb(198, 201, 245), rgba(23, 37, 156, 0.816)); */
+    font-family: Arial, Helvetica, sans-serif;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    transition: 10s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: backgroundChange 5s infinite;
+    font-size: 50px;
+}
+
+.login-btn {
+    position: absolute;
+    top: -2em;
+    animation: backgroundChange2 5s infinite, moveUp 1s infinite;
+    box-shadow: 15px 2px 15px 2px rgb(138, 50, 205);
+    bottom: 0;
+    left: -1em;
+    background: rgb(86, 54, 190);
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    font-size: 20px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+
+.container {
+    margin-top: 100px;
+    position: relative;
+    border: .5px gray solid;
+    border-radius: 8px;
+    background-color: #f7f7fd;
+    padding: 10px 10px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+
+
+}
+
+
+
+.name {
+    background: #f7f7fd;
+    font-size: 14px;
+    color: black;
+}
+
+img {
+    border-radius: 50%;
+
+}
+
+ul #input {
+    margin-left: -10px;
+    display: block;
+    position: relative;
+    width: 300px;
+    align-self: center;
+    outline: none;
+    border: 1px rgb(204, 204, 204) solid;
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 2em;
+}
+
+
+button {
+    margin-top: 10px;
+    margin-left: -30px;
+    width: 95%;
+    height: 3em;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: rgb(86, 54, 190);
+    border-radius: 10px;
+}
+
+
+.info {
+
+    margin-top: 10px;
+    margin-left: -10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info select {
+    outline: none;
+    border: 1px gray solid;
+    width: 142px;
+    border-radius: 6px;
+    height: 13rem;
+    height: 2.5em;
+
+
+}
+
+.info input {
+    outline: none;
+    border-radius: 6px;
+    border: 1px gray solid;
+    width: 142px;
+
+    height: 2.2em;
+}
+
+
+
+@keyframes backgroundChange {
+    0% {
+        background-color: rgb(155, 16, 236);
+        /* Initial background color */
+    }
+
+    25% {
+        background-color: rgb(217, 0, 255);
+        /* Color at 25% of the animation */
+    }
+
+    50% {
+        background-color: rgb(188, 174, 195);
+        /* Color at 50% of the animation */
+    }
+
+    75% {
+        background-color: rgb(255, 255, 255);
+        /* Color at 75% of the animation */
+    }
+
+    100% {
+        background-color: rgb(195, 0, 255);
+        /* Final background color */
+    }
+}
+
+
+@keyframes backgroundChange2 {
+    0% {
+        background-color: rgb(50, 55, 152);
+        transition: 5s;
+        /* Initial background color */
+    }
+
+    25% {
+        background-color: rgb(44, 50, 161);
+        transition: 5s;
+        /* Color at 25% of the animation */
+    }
+
+    50% {
+        background-color: rgb(43, 65, 163);
+        transition: 5s;
+        /* Color at 50% of the animation */
+    }
+
+    75% {
+        background-color: rgb(36, 54, 159);
+        transition: 5s;
+        /* Color at 75% of the animation */
+    }
+
+    100% {
+        background-color: rgb(49, 37, 187);
+        transition: 5s;
+        /* Final background color */
+    }
+}
+
+@keyframes moveUp {
+    0% {
+        margin-top: 0;
+    }
+
+    100% {
+        margin-top: 2px;
+    }
+
+
+}
+
+@keyframes backgroundChange3 {
+    0% {
+        background: linear-gradient(rgb(232, 232, 238), rgb(223, 223, 234), rgba(23, 37, 156, 0.816));
+        /* Initial background color */
+    }
+
+    25% {
+        background: linear-gradient(rgb(205, 205, 219), rgb(198, 201, 245), rgba(38, 32, 219, 0.816));
+        /* Color at 25% of the animation */
+    }
+
+    50% {
+        background: linear-gradient(rgb(205, 205, 219), rgb(198, 201, 245), rgba(23, 121, 16, 0.816));
+        /* Color at 50% of the animation */
+    }
+
+    75% {
+        background: linear-gradient(rgb(205, 205, 219), rgb(198, 201, 245), rgba(45, 23, 156, 0.816));
+        /* Color at 75% of the animation */
+    }
+
+    100% {
+        background: linear-gradient(rgb(205, 205, 219), rgb(198, 201, 245), rgba(156, 23, 143, 0.816));
+        /* Final background color */
+    }
+}
